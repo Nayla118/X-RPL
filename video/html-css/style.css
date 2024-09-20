@@ -6,7 +6,7 @@ div{
 h1{
     color: blue;
     border: 3px solid brown;
-    position: sticky;
+    position: rel;
     top: 20px;
 }
 
@@ -25,9 +25,6 @@ img{
     border: 1px solid black;
     margin: 5px;
 }
-ul li{
-    background-color: chocolate;
-}
 #paragraf{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -42,4 +39,48 @@ ul li{
 }
 .huruf-tebal{
     font-style: initial;
+}
+a{
+    text-decoration: 0;
+}
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    background: darkorange;
+    list-style: nones;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    color: #fff;
+    background: darkorange;
+    border: 1px solid blue;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+}
+ul li a{
+    color: #fff;
+}
+ul li:hover{
+    background: red;
+    cursor: pointer;
+}
+ul li ul{
+    background: orange;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 0.5rem;
+    left: 0;
+    display: none;
+}
+ul li:hover > ul,
+ul li ul:hover{
+    visibility: visible;
+    display: block;
+}
+ul li ul li{
+    clear: both;
+    width: 100%;
 }
