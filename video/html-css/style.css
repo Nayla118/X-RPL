@@ -25,3 +25,21 @@ img{
     border: 1px solid black;
     margin: 5px;
 }
+ul li{
+    background-color: chocolate;
+}
+#paragraf{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.huruf{
+    font-size: 30px;
+}
+.warna{
+    background-color: blue;
+}
+.bentuk{
+    font-style: italic;
+}
+.huruf-tebal{
+    font-style: initial;
+}
