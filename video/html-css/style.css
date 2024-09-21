@@ -1,5 +1,5 @@
 div{
-    width: 70%;
+    width: 70vw;
     margin: auto;
 }
 
@@ -29,7 +29,7 @@ img{
     font-family: Arial, Helvetica, sans-serif;
 }
 .huruf{
-    font-size: 30px;
+    font-size: 1rem;
 }
 .warna{
     background-color: blue;
@@ -54,8 +54,7 @@ ul li{
     color: #fff;
     background: darkorange;
     border: 1px solid blue;
-    display: block;
-    float: left;
+    display: inline-block;
     padding: 1rem;
     position: relative;
     text-decoration: none;
@@ -71,7 +70,7 @@ ul li ul{
     background: orange;
     visibility: hidden;
     position: absolute;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     left: 0;
     display: none;
 }
