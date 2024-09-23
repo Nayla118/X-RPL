@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #papan{
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+        }
+        .baris{
+            height: 100px;
+            width: 300px;
+        }
+        .baris-1{
+            background-color: red;
+        }
+        .baris-2{
+            background-color: green;
+        }
+        .baris-3{
+            background-color: aqua;
+        }
+        .kotak{
+            width: 100px;
+            height: 100px;
+        }
+        .col-1-1,
+        .col-1-3,
+        .col-2-2,
+        .col-3-1,
+        .col-3-3{
+            background-color: black;
+        }
+        .col-1-2,
+        .col-2-1,
+        .col-2-3,
+        .col-3-2{
+            background-color: white;
+        }
+        .col-1-1,
+        .col-2-1,
+        .col-3-1 {
+            position: absolute;
+            left: 8px;
+        }
+        .col-1-2,
+        .col-2-2,
+        .col-3-2 {
+            position: absolute;
+            left: 108px;
+        }
+        .col-1-3,
+        .col-2-3,
+        .col-3-3 {
+            position: absolute;
+            left: 208px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kotak catur</h1>
+    <div id="papan">
+        <div class="baris-1 baris">
+            <div class="col-1-1 kotak"></div>
+            <div class="col-1-2 kotak"></div>
+            <div class="col-1-3 kotak"></div>
+        </div>
+        <div class="baris-2 baris">
+            <div class="col-2-1 kotak"></div>
+            <div class="col-2-2 kotak"></div>
+            <div class="col-2-3 kotak"></div>
+        </div>
+        <div class="baris-3 baris">
+            <div class="col-3-1 kotak"></div>
+            <div class="col-3-2 kotak"></div>
+            <div class="col-3-3 kotak"></div>
+        </div>
+    </div>
+
+</body>
+</html>
