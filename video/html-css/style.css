@@ -1,13 +1,19 @@
+*{
+    margin: 0;
+}
 div{
     width: 70vw;
     margin: auto;
 }
 
+.content{
+    margin-top: 2%;
+
+}
+
 h1{
     color: blue;
     border: 3px solid brown;
-    position: rel;
-    top: 20px;
 }
 
 h2{
@@ -83,3 +89,6 @@ ul li ul li{
     clear: both;
     width: 100%;
 }
+
+
+
