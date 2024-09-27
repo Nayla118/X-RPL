@@ -1,35 +1,38 @@
 *{
     margin: 0;
 }
-div{
-    width: 70vw;
+.content{
+    margin-top: 3%;
+}
+
+.wrapper{
+    width: 80%;
     margin: auto;
 }
 
-.content{
+section{
     margin-top: 2%;
-
+}
+header img{
+    width: 60px;
+    float: left;
+}
+header h1{
+    margin-left: 20%%;
+}
+nav{
+    clear: both;
 }
 
-h1{
-    color: blue;
-    border: 3px solid brown;
+nav ul{
+    margin-top: 4%;
 }
-
-h2{
-    color: red;
-    border: 1px dashed blue;
-    margin-bottom: 100px;
+footer{
+    margin: 3%;
+    text-align: center;
 }
-
-p{
-    border: 1px solid black;
-    padding: 20px;
-}
-
-img{
-    border: 1px solid black;
-    margin: 5px;
+section p{
+    margin-top: 2%;
 }
 #paragraf{
     font-family: Arial, Helvetica, sans-serif;
@@ -59,7 +62,6 @@ ul{
 ul li{
     color: #fff;
     background: darkorange;
-    border: 1px solid blue;
     display: inline-block;
     padding: 1rem;
     position: relative;
