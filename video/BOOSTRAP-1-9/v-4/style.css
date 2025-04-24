@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .carousel-item img{
     height: 180px;
     margin: auto;
@@ -7,4 +8,15 @@
         height: 400px;
         margin-right: auto;
         margin-left: auto;
+=======
+.carousel-item img{
+    height: 180px;
+    margin: auto;
+}
+@media(min-width:560px) {
+    .carousel-item img{
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+>>>>>>> 400ffa1f1cad208f613d58f31e4a326d45838454
     }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .lima{
     height: 50px;
 }
@@ -16,4 +17,24 @@
 
 .green{
     background-color: green;
+=======
+.lima{
+    height: 50px;
+}
+
+.seratus{
+    height: 100px;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+>>>>>>> 400ffa1f1cad208f613d58f31e4a326d45838454
 }
