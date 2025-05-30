@@ -1,0 +1,39 @@
+promt 1
+Saya akan membuat toko online yang terdiri dari 4 bagian yaitu Header,Banner,Product,dan Footer. Dimana isi dari header adalah Menu,Kolom pencarian,Register,login. Dan isi dari banner adalah 2 kolom : untuk satu banner statis dan satu banner dinamis. Isi dari product adalah : nama produk,gambar,beserta harga produk. Footer berisi : Menu,Pembayaran,Media sosial,Dan juga kontak. Buatkan halaman HTML nya saja
+Buatkan HTML nya saja
+
+promt 2
+buatkan css menggunakan bootstrap untuk HTML
+
+promt 3
+buatkan css dinamis menggunakan 3 gambar slide yangg bergerak dari kiri ke kanan
+
+promt 4
+fokuskan pada banner
+
+promt 5
+buatkan page baru yang akan di panggil melalui home
+
+promt 6
+Tambahkan menu cart
+
+backend
+promt 1
+buatkan saya HTML untuk backend admin page yang digunakan untuk mengganti banner, melihat user yang menggunakan web,melihat dan menambah produk.Melihat user meliputi nama,email,alamat.melihat produk  e
+
+prompt PHP
+buatkan toko online menggunakan php dan MySQL dengan fitur 
+1. Menampilkan banner statis dan dinamis
+2. Menampilkan produk terdiri dari gambar produk, nama produk, add to cart, stok.
+3. Cart untuk menambahkan produk yang akan dibeli kedalam cart, melihat harga, menambah dan  mengurangi jumlah produk, menghapus produk, menambah produk, melihat total gambar, melakukan checkout, dan pembayaran.
+4. Register untuk registrasi pelanggan dengan memasukkan nama, email, password, dan enter.
+5. Login untuk login pelanggan dengan memasukkan email dan password pelanggan agar pelanggan bisa login saat belanja.
+6. kontak untuk pelanggan menghubungi toko dengan mmemasukan kolom Nama,Email,dan Pesan yang akan di sampaikan.
+7. Tampilan about page untuk pelanggan melihat profil dan motto dari toko kami yang menampilkan deskripsi Misi kami,Deskripsi visi kami, dan Deskripsi dari nilai kami serta tambahkan logo untuk setiap poin motto kami.
+8. Halaman Shop yang menampilkan Produk agar pembeli dapat melihat Produk yang akan di beli.
+
+Buatkan PHP nya saja Tanpa menggunakan HTML dan CSS, dan Buatkan dalam file sesuai dengan fungsinya masing-masing
+
+promt php2
+buatkan dummy data untuk tabel Produk sebanyak 20 data dalam bentuk SQL agar bisa saya import
+ 

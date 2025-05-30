@@ -1,0 +1,48 @@
+/* assets/css/style.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Warna latar belakang yang lembut */
+}
+
+header {
+    background-color: #343a40; /* Warna gelap untuk header */
+}
+
+h1, h2 {
+    color: #ffffff; /* Warna teks putih untuk judul */
+}
+
+.card {
+    transition: transform 0.2s; /* Efek transisi saat hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Membesarkan kartu saat hover */
+}
+
+footer {
+    background-color: #343a40; /* Warna gelap untuk footer */
+}
+
+.table th {
+    background-color: #007bff; /* Warna biru untuk header tabel */
+    color: white; /* Teks putih untuk header tabel */
+}
+
+.table td {
+    background-color: #ffffff; /* Warna putih untuk sel tabel */
+}
+
+.btn-success {
+    background-color: #28a745; /* Warna hijau untuk tombol checkout */
+    border: none; /* Menghilangkan border */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat hover */
+}
+
+.text-danger {
+    color: #dc3545; /* Warna merah untuk pesan kesalahan */
+}
