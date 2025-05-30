@@ -31,7 +31,7 @@ if (isset($_GET["add"])) {
     "product" => $row["product"],
     "harga" => $row["harga"],
     "jumlah" => isset($_SESSION["cart"][$row["id"]])?$_SESSION["cart"]["$row"["id"]]["jumlah"]+1:1;
-    ];
+    };
 }
 ?>
 
