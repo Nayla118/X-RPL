@@ -4,56 +4,61 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class AuthController extends Controller
 {
-    public function index() 
+    public function showLogin()
     {
-        if ($user = Auth::user()) {
-            if ($user->level == 'admin') {
-                return redirect('admin/user');
-            }
-            if ($user->level == 'kasir') {
-                return redirect('admin/order');
-            }
-            if ($user->level == 'manager') {
-                return redirect('admin/kategori');
-            }
-        }
-        return view('Backend.login');
+        return view('auth.login');
     }
 
-    public function postlogin(Request $request) 
+    public function login(Request $request)
     {
-        $request->validate([
-            'email' => 'required',
-            'password' => 'required|min:3', 
+        $credentials = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required'
         ]);
 
-        $data = $request->only('email','password');
-
-        if (Auth::attempt($data)) {
-            $user = Auth::user();
-
-            if ($user->level == 'admin') {
-                return redirect('admin/user');
-            }
-            if ($user->level == 'kasir') {
-                return redirect('admin/order');
-            }
-            if ($user->level == 'manager') {
-                return redirect('admin/kategori');
-            }
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('/');
         }
 
-        return redirect('admin');
+        return back()->withErrors([
+            'email' => 'Email atau password salah.',
+        ]);
     }
 
-    public function logout() 
+    public function showRegister()
     {
-        session()->flush();
-        Auth::logout();
+        return view('auth.register');
+    }
 
-        return redirect('admin');
+    public function register(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|confirmed|min:6'
+        ]);
+
+        $user = User::create([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'password' => bcrypt($validated['password'])
+        ]);
+
+        Auth::login($user);
+
+        return redirect('/');
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/');
     }
 }
